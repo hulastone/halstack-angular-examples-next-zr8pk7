@@ -1,0 +1,12 @@
+<div theme>
+  <dxc-text-input
+    label="Suffix"
+    [value]="controlledValue"
+    (onChange)="onChange($event)"
+    (onBlur)="onBlur($event)"
+    margin="medium"
+    clearable="true"
+  >
+    <dxc-text-input-suffix value="USD"></dxc-text-input-suffix>
+  </dxc-text-input>
+</div>

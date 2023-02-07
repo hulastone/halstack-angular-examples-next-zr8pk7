@@ -1,0 +1,13 @@
+<div theme>
+  <dxc-text-input
+    label="Autosuggest function"
+    helperText="Checks if any of the options include the incoming string"
+    margin="medium"
+    [value]="controlledValue"
+    (onChange)="onChange($event)"
+    clearable="true"
+    [suggestions]="callbackFunc"
+    size="large"
+  >
+  </dxc-text-input>
+</div>

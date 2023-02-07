@@ -1,0 +1,6 @@
+<div theme>
+  <dxc-progressbar margin="medium" showValue="true"
+  [value]="fileUploadComplete?100:null" [label]="fileUploadComplete?'Upload Complete':'Uploading..'">
+  </dxc-progressbar>
+  <Button (click)="handleComplete()">{{fileUploadComplete?'Mark Loading':'Mark Complete'}}</Button>
+</div>

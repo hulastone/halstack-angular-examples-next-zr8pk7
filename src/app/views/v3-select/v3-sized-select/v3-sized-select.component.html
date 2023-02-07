@@ -1,0 +1,12 @@
+<div theme>
+  <v3-dxc-select label="Sized" margin="medium" size="small">
+    <v3-dxc-select-option
+      *ngFor="let option of optionsWithOnlyIcons"
+      [value]="option.value"
+    >
+      <dxc-option-icon>
+        <img [src]="option.iconSrc" />
+      </dxc-option-icon>
+    </v3-dxc-select-option>
+  </v3-dxc-select>
+</div>

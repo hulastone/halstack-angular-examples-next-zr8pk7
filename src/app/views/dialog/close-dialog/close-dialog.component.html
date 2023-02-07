@@ -1,0 +1,15 @@
+<div theme>
+  <dxc-button
+    label="Close button dialog"
+    (onClick)="openDialog()"
+    margin="medium"
+    mode="primary"
+  ></dxc-button>
+  <dxc-dialog (onCloseClick)="openDialog()" *ngIf="visible" padding="small">
+    <dxc-button
+      label="Close"
+      (onClick)="openDialog()"
+      margin="small"
+    ></dxc-button>
+  </dxc-dialog>
+</div>

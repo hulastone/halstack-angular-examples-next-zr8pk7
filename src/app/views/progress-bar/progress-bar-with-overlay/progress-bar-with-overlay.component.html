@@ -1,0 +1,10 @@
+<div theme>
+  <dxc-button label="SHOW PROGRESS BAR FOR 3 SECONDS" (onClick)="showProgressbar()" margin="medium" mode="primary">
+  </dxc-button>
+
+  <div *ngIf="isVisible">
+    <dxc-progressbar margin="medium" label="Loading..." overlay="true">
+    </dxc-progressbar>
+  </div>
+
+</div>

@@ -1,0 +1,16 @@
+<div theme>
+  <dxc-switch
+    [checked]="checked1"
+    label="Label before"
+    (onChange)="onChange1($event)"
+    margin="medium"
+  ></dxc-switch>
+
+  <dxc-switch
+    [checked]="checked2"
+    labelPosition="after"
+    label="Label after"
+    (onChange)="onChange2($event)"
+    margin="medium"
+  ></dxc-switch>
+</div>

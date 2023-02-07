@@ -1,0 +1,17 @@
+<div theme>
+  <v3-dxc-select
+    (onChange)="onChange($event)"
+    label="Multiple Select"
+    multiple="true"
+    margin="medium"
+    [value]="multipleSelected"
+    size="medium"
+  >
+    <v3-dxc-select-option
+      *ngFor="let element of optionsWithoutIcon"
+      [label]="element.label"
+      [value]="element.value"
+    >
+    </v3-dxc-select-option>
+  </v3-dxc-select>
+</div>

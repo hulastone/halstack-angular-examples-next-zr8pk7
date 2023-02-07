@@ -1,0 +1,11 @@
+<div theme>
+  <dxc-textarea
+    label="Pattern"
+    [value]="value"
+    (onChange)="onChange($event)"
+    (onBlur)="onBlur($event)"
+    pattern='^.*(?=.*[a-zA-Z])(?=.*)(?=.*[!&$%&? "]).*$'
+    margin="medium"
+  >
+  </dxc-textarea>
+</div>

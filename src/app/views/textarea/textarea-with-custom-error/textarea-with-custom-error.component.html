@@ -1,0 +1,13 @@
+<div theme>
+  <dxc-textarea
+    label="Custom errors"
+    [value]="value"
+    (onChange)="onChange($event)"
+    (onBlur)="onBlur($event)"
+    pattern='^.*(?=.*[a-zA-Z])(?=.*)(?=.*[!&$%&? "]).*$'
+    [length]="length"
+    [error]="errorMessage"
+    margin="medium"
+  >
+  </dxc-textarea>
+</div>

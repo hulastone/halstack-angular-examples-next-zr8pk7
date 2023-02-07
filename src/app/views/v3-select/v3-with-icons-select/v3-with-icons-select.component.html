@@ -1,0 +1,16 @@
+<div theme>
+  <v3-dxc-select
+    (onChange)="onChange($event)"
+    label="Default Select"
+    margin="medium"
+    [value]="inputValue"
+  >
+    <v3-dxc-select-option
+      *ngFor="let option of optionsWithIcons"
+      [label]="option.label"
+      [value]="option.value"
+    >
+      <dxc-option-icon><img [src]="option.iconSrc" /></dxc-option-icon>
+    </v3-dxc-select-option>
+  </v3-dxc-select>
+</div>

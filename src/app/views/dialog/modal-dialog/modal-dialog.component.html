@@ -1,0 +1,16 @@
+<div theme>
+  <dxc-button
+    label="Modal dialog"
+    (onClick)="openDialog()"
+    margin="medium"
+    mode="primary"
+  ></dxc-button>
+  <dxc-dialog
+    *ngIf="visible"
+    padding="xxlarge"
+    (onBackgroundClick)="openDialog()"
+    [isCloseVisible]="false"
+  >
+    Overlay close
+  </dxc-dialog>
+</div>

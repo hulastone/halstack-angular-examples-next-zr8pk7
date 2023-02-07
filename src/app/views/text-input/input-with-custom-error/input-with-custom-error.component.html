@@ -1,0 +1,13 @@
+<div theme>
+  <dxc-text-input
+    label="Custom errors"
+    [value]="controlledValue"
+    (onChange)="onChange($event)"
+    (onBlur)="onBlur($event)"
+    margin="medium"
+    clearable="true"
+    [length]="length"
+    pattern='^.*(?=.*[a-zA-Z])(?=.*)(?=.*[!&$%&? "]).*$'
+    [error]="errorMessage"
+  ></dxc-text-input>
+</div>

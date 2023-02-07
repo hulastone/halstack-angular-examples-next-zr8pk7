@@ -1,0 +1,13 @@
+<div theme>
+  <v3-dxc-select
+    (onChange)="onUncontrolledChange($event)"
+    label="Uncontrolled Select"
+    margin="medium"
+  >
+    <v3-dxc-select-option
+      *ngFor="let option of optionsWithoutIcon"
+      [label]="option.label"
+      [value]="option.value"
+    ></v3-dxc-select-option>
+  </v3-dxc-select>
+</div>

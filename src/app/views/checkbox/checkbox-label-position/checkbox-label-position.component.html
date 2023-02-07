@@ -1,0 +1,18 @@
+<div theme>
+  <dxc-checkbox
+    [checked]="checked1"
+    label="Label before"
+    (onChange)="onChange1($event)"
+    margin="medium"
+  >
+  </dxc-checkbox>
+
+  <dxc-checkbox
+    [checked]="checked2"
+    label="Label after"
+    (onChange)="onChange2($event)"
+    labelPosition="after"
+    margin="medium"
+  >
+  </dxc-checkbox>
+</div>
